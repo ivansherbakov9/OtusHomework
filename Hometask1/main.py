@@ -1,5 +1,6 @@
 SYMBOLS = \
-    'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+    'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+    #'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя'
 
 
 def splitting(str):
@@ -47,7 +48,7 @@ def сaesar_сipher(message, key, mode="e"):
         if symbolIndex == -1:#если символа нет(пробел)
             translated += symbol
         else:
-            symbolIndex += key
+            symbolIndex -= key
 
             if symbolIndex >= len(SYMBOLS):
                 symbolIndex -= len(SYMBOLS)
@@ -59,7 +60,7 @@ def сaesar_сipher(message, key, mode="e"):
     return translated
 
 
-inp = str(input("Введите число(Формат: 123456) "))
+'''inp = str(input("Введите число(Формат: 123456) "))
 print(splitting(inp))
 
 inp2 = str(input("Введите snake_case "))
@@ -72,4 +73,10 @@ mode = str(input("Зашифровать/Расшифровать? (e / d) "))
 msg = str(input("Введите сообщение "))
 key = int(input("Введите ключ "))
 
-print(сaesar_сipher(msg, key, mode=mode))
+print(сaesar_сipher(msg, key, mode=mode))'''
+
+
+txt = "Цйхф еьсцху! Ъыъ цо ёбыхух, фхбп ёрцзу АФСУЬСЯ ХБСБ. Шур фря бх ехьцоя кузв ъыбыд. Адп урэр, нурво арйуснщ йныйущп с зйехлы рабрцьхфхббр, рнхбщ цыжхб ВЫДЫБЙ. Адп фхбп шур ъдкнхцрх йдрцр."
+
+for i in range(32):
+    print(сaesar_сipher(txt.lower(), i, mode="d"))
