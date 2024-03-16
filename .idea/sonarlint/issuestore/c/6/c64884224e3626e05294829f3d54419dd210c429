@@ -1,0 +1,5 @@
+
+Jpython:S5806"+Rename this variable; it shadows a builtin.(Ğ˜ĞÙ8¶ú÷¶Û1
+zpython:S117/"\Rename this local variable "symbolIndex" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ş¡ú–8¶ú÷¶Û1
+tpython:S1542("URename function "Ñaesar_Ñipher" to match the regular expression ^[a-z_][a-z0-9_]*$.(‚ß€½8¶ú÷¶Û1
+Bpython:S125?"Remove this commented out code.(œû‰Êÿÿÿÿÿ8› £˜â1
